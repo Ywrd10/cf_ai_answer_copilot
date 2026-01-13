@@ -1,27 +1,40 @@
 export async function onRequest(context) {
-  const url = new URL(context.request.url);
+  try {
+    const url = new URL(context.request.url);
 
-  // Only proxy API routes
-  const isApi = url.pathname === "/profile" || url.pathname === "/generate";
-  if (!isApi) return context.next();
+    const isApi = url.pathname === "/profile" || url.pathname === "/generate";
+    if (!isApi) return context.next();
 
- const workerBase = "cf-ai-answer-copilot-v1.di850122.workers.dev";
-  const target = new URL(url.pathname + url.search, workerBase);
+  
+    const workerBase = "https://cf-ai-answer-copilot.di850122.workers.dev";
 
-  // Clone headers
-  const headers = new Headers(context.request.headers);
+    const target = new URL(url.pathname + url.search, workerBase);
 
-  // Handle body safely 
-  let body = null;
-  const method = context.request.method;
+    // Only forward the headers we actually need.
+    // Forwarding everything can cause runtime errors on Cloudflare.
+    const headers = new Headers();
+    const ct = context.request.headers.get("content-type");
+    if (ct) headers.set("content-type", ct);
 
-  if (method !== "GET" && method !== "HEAD") {
-    body = await context.request.arrayBuffer();
+    const method = context.request.method;
+
+    // Preflight
+    if (method === "OPTIONS") {
+      return fetch(target.toString(), { method, headers });
+    }
+
+    let body;
+    if (method !== "GET" && method !== "HEAD") {
+      body = await context.request.arrayBuffer();
+    }
+
+    const resp = await fetch(target.toString(), { method, headers, body });
+    return resp;
+  } catch (err) {
+   
+    return new Response(
+      `Pages middleware error: ${err?.message || String(err)}`,
+      { status: 502, headers: { "content-type": "text/plain" } }
+    );
   }
-
-  return fetch(target.toString(), {
-    method,
-    headers,
-    body,
-  });
 }
