@@ -1,34 +1,17 @@
-/**
- * For more details on how to configure Wrangler, refer to:
- * https://developers.cloudflare.com/workers/wrangler/configuration/
- */
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "api",
-  "main": "src/index.ts",
-  "compatibility_date": "2025-09-27",
+  "name": "cf-ai-answer-copilot-v1",
+  "main": "api/src/index.ts",
+  "compatibility_date": "2026-01-13",
 
-  "observability": {
-    "enabled": true
-  },
-
-  "ai": {
-    "binding": "AI"
-  },
+  "ai": { "binding": "AI" },
 
   "durable_objects": {
     "bindings": [
-      {
-        "name": "MEMORY",
-        "class_name": "MemoryDO"
-      }
+      { "name": "MEMORY", "class_name": "MemoryDO" }
     ]
   },
 
   "migrations": [
-    {
-      "tag": "v1",
-      "new_classes": ["MemoryDO"]
-    }
+    { "tag": "v1", "new_sqlite_classes": ["MemoryDO"] }
   ]
 }
