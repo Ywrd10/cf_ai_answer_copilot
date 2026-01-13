@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answer Copilot</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Answer Copilot</h1>
+      <p class="sub">Generate 100–150 word internship application answers.</p>
+
+      <div class="card">
+        <label>Profile (saved)</label>
+        <textarea id="profile" rows="4" placeholder="Quick bullets about you..."></textarea>
+        <div class="row">
+          <input id="userId" placeholder="user id (ex: diego)" />
+          <button id="saveProfile">Save profile</button>
+        </div>
+        <div id="saveStatus" class="status"></div>
+      </div>
+
+      <div class="card">
+        <label>Job description (optional)</label>
+        <textarea id="jobDesc" rows="6" placeholder="Paste job description here..."></textarea>
+      </div>
+
+      <div class="card">
+        <label>Question</label>
+        <textarea id="question" rows="4" placeholder="Paste the application question here..."></textarea>
+
+        <div class="row">
+          <select id="tone">
+            <option value="casual">Casual</option>
+            <option value="professional">Professional</option>
+          </select>
+
+          <input id="minWords" type="number" value="100" min="50" />
+          <input id="maxWords" type="number" value="150" min="50" />
+
+          <button id="generate">Generate</button>
+        </div>
+
+        <div id="genStatus" class="status"></div>
+      </div>
+
+      <div class="card">
+        <label>Answer</label>
+        <pre id="answer" class="answer"></pre>
+        <button id="copy" class="secondary">Copy</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
