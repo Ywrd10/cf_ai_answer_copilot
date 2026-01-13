@@ -32,5 +32,5 @@ You can save a short profile about yourself and generate tailored responses to a
    cd api
    npx wrangler dev
 
-##Screenshot
+## Screenshot
 <img width="1917" height="997" alt="cf-ai" src="https://github.com/user-attachments/assets/19b07826-305a-4cc7-8d92-78e8b9632fb8" />
