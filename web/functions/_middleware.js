@@ -1,19 +1,27 @@
 export async function onRequest(context) {
   const url = new URL(context.request.url);
 
-  // Send API routes to the Worker
-  if (url.pathname.startsWith("/profile") || url.pathname.startsWith("/generate")) {
-    // CHANGE THIS to your Worker URL once you have it (next step)
-    const workerBase = "cf-ai-answer-copilot-v1.di850122.workers.dev";
+  // Only proxy API routes
+  const isApi = url.pathname === "/profile" || url.pathname === "/generate";
+  if (!isApi) return context.next();
 
-    const target = new URL(workerBase);
-    target.pathname = url.pathname;
-    target.search = url.search;
+ const workerBase = "cf-ai-answer-copilot-v1.di850122.workers.dev";
+  const target = new URL(url.pathname + url.search, workerBase);
 
-    const req = new Request(target.toString(), context.request);
-    return fetch(req);
+  // Clone headers
+  const headers = new Headers(context.request.headers);
+
+  // Handle body safely 
+  let body = null;
+  const method = context.request.method;
+
+  if (method !== "GET" && method !== "HEAD") {
+    body = await context.request.arrayBuffer();
   }
 
- 
-  return context.next();
+  return fetch(target.toString(), {
+    method,
+    headers,
+    body,
+  });
 }
