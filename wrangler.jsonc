@@ -13,5 +13,13 @@
 
   "migrations": [
     { "tag": "v1", "new_sqlite_classes": ["MemoryDO"] }
+  ],
+
+  "vectorize": [
+    { "binding": "VECTORIZE", "index_name": "cf-ai-answer-copilot-kb", "remote": true }
+  ],
+
+  "analytics_engine_datasets": [
+    { "binding": "RAG_ANALYTICS", "dataset": "rag_answer_copilot" }
   ]
 }

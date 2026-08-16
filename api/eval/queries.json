@@ -1,0 +1,253 @@
+[
+  {
+    "id": "personal-01",
+    "profile": "CS student at a state university, graduating in 2027.",
+    "jobDesc": "Backend Engineering Intern building high-throughput services in Go.",
+    "question": "Describe a technical project you're proud of.",
+    "tone": "professional",
+    "minWords": 90,
+    "maxWords": 140,
+    "personalDoc": "Project: Built \"QueueRunner,\" a distributed job scheduler written in Go that processes over 10,000 tasks per minute across a pool of worker nodes, using Redis for coordination and Prometheus for monitoring.",
+    "expectedPoints": [
+      "names the QueueRunner project specifically",
+      "mentions it is written in Go",
+      "mentions the 10,000 tasks per minute throughput figure",
+      "mentions Redis and/or Prometheus"
+    ]
+  },
+  {
+    "id": "personal-02",
+    "profile": "CS student, junior year, interested in fintech.",
+    "jobDesc": "Software Engineering Intern, backend team, fintech company.",
+    "question": "Tell me about a time you improved the performance of a system.",
+    "tone": "professional",
+    "minWords": 90,
+    "maxWords": 140,
+    "personalDoc": "Internship experience: Summer software engineering intern at a fintech startup called Ledgerly, where I rewrote a core reporting API endpoint and reduced its p95 latency by 40 percent by adding caching and fixing an N+1 query.",
+    "expectedPoints": [
+      "names Ledgerly as the company",
+      "mentions the reporting API endpoint",
+      "mentions the 40 percent p95 latency reduction",
+      "mentions caching and/or the N+1 query fix"
+    ]
+  },
+  {
+    "id": "personal-03",
+    "profile": "CS student who enjoys building things quickly under pressure.",
+    "jobDesc": "Full-stack Engineering Intern.",
+    "question": "Describe a time you worked effectively as part of a team.",
+    "tone": "enthusiastic",
+    "minWords": 90,
+    "maxWords": 140,
+    "personalDoc": "Leadership: Led a four-person team to a second-place finish at the state university hackathon, building a real-time collaborative chat application using WebSockets and a custom presence system in under 24 hours.",
+    "expectedPoints": [
+      "mentions leading a four-person team",
+      "mentions the hackathon and second-place finish",
+      "mentions WebSockets or the real-time chat application",
+      "mentions the 24-hour time constraint"
+    ]
+  },
+  {
+    "id": "personal-04",
+    "profile": "CS student who likes helping other students learn.",
+    "jobDesc": "Developer Relations Intern.",
+    "question": "Describe an experience where you explained something technical to someone else.",
+    "tone": "casual",
+    "minWords": 90,
+    "maxWords": 140,
+    "personalDoc": "Teaching: Served as a teaching assistant for the Data Structures and Algorithms course for two semesters, holding weekly office hours and grading over 200 student submissions per semester with detailed rubric-based feedback.",
+    "expectedPoints": [
+      "mentions being a TA for Data Structures and Algorithms",
+      "mentions two semesters",
+      "mentions office hours",
+      "mentions grading roughly 200 submissions per semester"
+    ]
+  },
+  {
+    "id": "personal-05",
+    "profile": "CS student comfortable across the stack.",
+    "jobDesc": "Platform Engineering Intern, must know containers and CI/CD.",
+    "question": "What technical skills would you bring to this role?",
+    "tone": "professional",
+    "minWords": 80,
+    "maxWords": 130,
+    "personalDoc": "Skills: Proficient in Go, Python, and TypeScript. Comfortable with PostgreSQL, Redis, Docker, and basic Kubernetes. Familiar with CI/CD pipelines using GitHub Actions.",
+    "expectedPoints": [
+      "lists Go, Python, and/or TypeScript",
+      "mentions Docker and/or Kubernetes",
+      "mentions GitHub Actions or CI/CD pipelines"
+    ]
+  },
+  {
+    "id": "personal-06",
+    "profile": "CS student open to any backend-adjacent role.",
+    "jobDesc": "Site Reliability Engineering Intern, monitoring and observability focus.",
+    "question": "Why are you a good fit for a monitoring/observability-focused internship?",
+    "tone": "professional",
+    "minWords": 90,
+    "maxWords": 140,
+    "personalDoc": "Project: Built \"QueueRunner,\" a distributed job scheduler written in Go that processes over 10,000 tasks per minute across a pool of worker nodes, using Redis for coordination and Prometheus for monitoring.",
+    "expectedPoints": [
+      "connects the QueueRunner project to observability",
+      "mentions Prometheus specifically",
+      "mentions the throughput or scale of the system"
+    ]
+  },
+  {
+    "id": "advice-01",
+    "profile": "CS student with internship experience building a REST API for a class project that handled user authentication and file uploads.",
+    "jobDesc": "Backend Engineering Intern.",
+    "question": "Tell me about a challenge you overcame while working on a project.",
+    "tone": "professional",
+    "minWords": 100,
+    "maxWords": 150,
+    "expectedPoints": [
+      "follows a situation-task-action-result structure",
+      "includes a quantified or concrete result, not just a vague outcome"
+    ]
+  },
+  {
+    "id": "advice-02",
+    "profile": "CS student who has contributed to a small open-source library for parsing CSV files.",
+    "jobDesc": "Software Engineering Intern, data infrastructure team, high-volume distributed systems.",
+    "question": "What makes you a strong candidate for this role?",
+    "tone": "professional",
+    "minWords": 100,
+    "maxWords": 150,
+    "expectedPoints": [
+      "uses specific language from the job description such as 'distributed systems' where it genuinely applies",
+      "avoids generic filler phrases like 'hard worker' without backing evidence"
+    ]
+  },
+  {
+    "id": "advice-03",
+    "profile": "CS student who built a small mobile app for tracking study habits using Flutter.",
+    "jobDesc": "Mobile Engineering Intern at a well-known consumer app company.",
+    "question": "Why do you want to work at this company specifically?",
+    "tone": "enthusiastic",
+    "minWords": 80,
+    "maxWords": 120,
+    "expectedPoints": [
+      "references something specific about the company's product or engineering culture",
+      "avoids vague reasons like 'great reputation' with no specifics"
+    ]
+  },
+  {
+    "id": "advice-04",
+    "profile": "CS student who once shipped a bug that caused a class project's demo to crash during grading.",
+    "jobDesc": "Software Engineering Intern.",
+    "question": "Tell me about a mistake you made and what you learned from it.",
+    "tone": "professional",
+    "minWords": 90,
+    "maxWords": 140,
+    "expectedPoints": [
+      "briefly owns the mistake without excessive apologizing",
+      "spends most of the answer on the concrete lesson learned and resulting behavior change"
+    ]
+  },
+  {
+    "id": "advice-05",
+    "profile": "CS student who disagreed with a teammate about which database to use on a class project.",
+    "jobDesc": "Software Engineering Intern.",
+    "question": "Describe a time you had a disagreement with a teammate and how you resolved it.",
+    "tone": "professional",
+    "minWords": 90,
+    "maxWords": 140,
+    "expectedPoints": [
+      "describes the teammate's perspective fairly, not just negatively",
+      "explains a concrete resolution rather than a vague 'we talked it out'"
+    ]
+  },
+  {
+    "id": "advice-06",
+    "profile": "CS student who built a caching layer for a class web app to speed up page loads.",
+    "jobDesc": "Software Engineering Intern.",
+    "question": "Describe a project where you improved something technical.",
+    "tone": "professional",
+    "minWords": 100,
+    "maxWords": 150,
+    "expectedPoints": [
+      "mentions specific technologies used",
+      "mentions scale or measurable impact rather than only describing the feature functionally"
+    ]
+  },
+  {
+    "id": "control-01",
+    "profile": "Sophomore CS major with a 3.8 GPA, active in the university's robotics club, built a line-following robot using an Arduino and PID control.",
+    "jobDesc": "Robotics Software Intern.",
+    "question": "Tell me about your background and why you're interested in robotics.",
+    "tone": "enthusiastic",
+    "minWords": 90,
+    "maxWords": 140,
+    "expectedPoints": [
+      "mentions the robotics club or the line-following robot",
+      "mentions Arduino or PID control",
+      "stays on topic and answers the question asked"
+    ]
+  },
+  {
+    "id": "control-02",
+    "profile": "CS student who has taken courses in algorithms, operating systems, and databases, and completed a personal project building a simple key-value store.",
+    "jobDesc": "Systems Engineering Intern.",
+    "question": "What coursework or projects prepared you for a systems-focused internship?",
+    "tone": "professional",
+    "minWords": 90,
+    "maxWords": 140,
+    "expectedPoints": [
+      "mentions operating systems and/or databases coursework",
+      "mentions the key-value store project"
+    ]
+  },
+  {
+    "id": "control-03",
+    "profile": "CS student who is a native Spanish speaker and has done freelance web development for two small local businesses.",
+    "jobDesc": "Software Engineering Intern, customer-facing tools team.",
+    "question": "Describe your relevant work experience.",
+    "tone": "casual",
+    "minWords": 90,
+    "maxWords": 140,
+    "expectedPoints": [
+      "mentions the freelance web development work",
+      "mentions working with small businesses or clients directly"
+    ]
+  },
+  {
+    "id": "control-04",
+    "profile": "CS student who competed in three ACM-style programming competitions and placed top 10 in a regional contest.",
+    "jobDesc": "Software Engineering Intern, algorithms-heavy interview process.",
+    "question": "What experience do you have with algorithmic problem solving?",
+    "tone": "professional",
+    "minWords": 80,
+    "maxWords": 130,
+    "expectedPoints": [
+      "mentions the programming competitions",
+      "mentions the top 10 regional placement"
+    ]
+  },
+  {
+    "id": "control-05",
+    "profile": "CS student who maintains a personal blog about their coding projects and has about 500 monthly readers.",
+    "jobDesc": "Developer Relations Intern.",
+    "question": "How do you like to share what you learn with others?",
+    "tone": "casual",
+    "minWords": 80,
+    "maxWords": 130,
+    "expectedPoints": [
+      "mentions the personal blog",
+      "mentions the approximate readership or audience"
+    ]
+  },
+  {
+    "id": "control-06",
+    "profile": "CS student who volunteers teaching basic coding to high schoolers on weekends.",
+    "jobDesc": "Software Engineering Intern.",
+    "question": "Tell me about a time you helped someone outside of a school or work setting.",
+    "tone": "casual",
+    "minWords": 80,
+    "maxWords": 130,
+    "expectedPoints": [
+      "mentions volunteering to teach coding",
+      "mentions high schoolers or the weekend program specifically"
+    ]
+  }
+]

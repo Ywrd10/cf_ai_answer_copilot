@@ -1,0 +1,4 @@
+# wrangler project (config lives at repo root; .dev.vars must sit next to it)
+.dev.vars*
+!.dev.vars.example
+.wrangler/

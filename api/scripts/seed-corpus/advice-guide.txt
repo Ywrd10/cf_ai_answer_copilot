@@ -1,0 +1,19 @@
+Use the STAR method for behavioral questions: describe the Situation, the Task you were responsible for, the Action you took, and the Result you achieved. Quantify the result whenever possible using percentages, time saved, users affected, or dollars saved.
+
+Avoid generic filler like "I am a hard worker who loves technology." Instead, name a specific project, class, or personal experience that proves the claim. Recruiters skim; concrete nouns and numbers stand out far more than adjectives.
+
+Mirror language from the job description when it genuinely matches the candidate's background. If the posting emphasizes "distributed systems" and the candidate built one, say so explicitly using that phrase rather than a vague synonym. Do not copy the posting's wording if it does not actually apply to the candidate.
+
+Keep answers within the requested word count. Reviewers read dozens of these; going over the limit signals poor judgment about instructions, even if the content itself is good.
+
+Close application answers with a forward-looking sentence that connects the candidate's background to what they would contribute in the role, rather than just restating their resume.
+
+Avoid cliches like "team player," "self-starter," or "passionate about coding" without immediate concrete evidence backing the claim in the same sentence or the next one.
+
+When asked "why this company," reference something specific about the company's product, engineering culture, or a technical blog post or talk, not just "great reputation" or "growth opportunities."
+
+When describing a technical project, mention the specific technologies used and the scale involved (requests per second, users, data volume) rather than describing it only in vague functional terms.
+
+When asked about a failure or mistake, briefly own the mistake without over-apologizing, then spend most of the answer on the concrete lesson learned and how it changed the candidate's later behavior.
+
+When asked about teamwork or conflict, describe the other person's perspective fairly before explaining the resolution; answers that only frame the other party negatively read as immature to reviewers.

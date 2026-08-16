@@ -159,9 +159,11 @@ dist
 .pnp.\*
 
 # wrangler project
+# .dev.vars lives at the repo root (next to wrangler.jsonc), see ../.gitignore
 
-.dev.vars*
-!.dev.vars.example
 .env*
 !.env.example
 .wrangler/
+
+# eval run output
+eval/results/
