@@ -1,5 +1,5 @@
 {
-  "name": "cf-ai-answer-copilot-v1",
+  "name": "cf-ai-answer-copilot",
   "main": "api/src/index.ts",
   "compatibility_date": "2026-01-13",
 
